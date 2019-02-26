@@ -3,14 +3,41 @@
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
+        <img id="leftimg" src="https://i.imgur.com/78Oh4HF.jpg?1" title="source: imgur.com" />
+        <img id="rightimg" src="https://i.imgur.com/78Oh4HF.jpg?1" title="source: imgur.com" />
+
+        <h1>Ultra wok menu search</h1>
         <div id="search">
             <div id="search2">
-                <input type="search" id="mysearch" placeholder="Search..">
+                <input type="search" id="mySearch" placeholder="search" value="">
                 <div id="buttondiv">
-                    <button id="mybutton">search</button>
+                    <button id="mybutton" onclick="lookUp()">search</button>
                 </div>
             </div>
         </div>
-        <script src="animate.js"></script>
+        <div id="description">
+        </div>
+        <script>
+
+            var menu = {};
+
+            menu = {
+                "Spicy Chicken wing": "htis is wing des",
+                "Chicken w/ snow peas": "super good chicken",
+                "Chicken w/ mushrooms": "yummy mushrooms"
+            }
+
+            function lookUp(){
+                    var dish = document.getElementById("mySearch").value;
+                    var lowerdish = dish.toLowerCase()
+                    for (const [key, value] of Object.entries(menu)) {
+                        if(lowerdish == key.toLowerCase()){
+                            document.getElementById("description").innerHTML = value;
+                        }
+                        console.log(key.toLowerCase(),dish.toLowerCase())
+                    }
+
+            }
+        </script>
     </body>
 </html>
