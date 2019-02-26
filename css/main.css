@@ -1,12 +1,19 @@
-
 #search{
     display:inline;
 }
 #buttondiv {
     display:inline;
+    margin-right:0;
 }
 #search2{
     display:block;
-    margin-left:36%;
+    margin-left:30%;
     margin-top:20%;
+}
+#mysearch{
+    width:50%;
+    height:5%;
+}
+#mybutton{
+    height:5%;
 }
