@@ -1,4 +1,7 @@
-
+*{
+    padding:0;
+    margin:0;
+}
 #search{
     display:inline;
 }
@@ -8,8 +11,8 @@
 }
 #search2{
     display:block;
-    margin-left:30%;
-    margin-top:20%;
+    margin-left:32%;
+    margin-top:7%;
 }
 #mysearch{
     width:50%;
@@ -17,4 +20,22 @@
 }
 #mybutton{
     height:5%;
+}
+#description{
+    text-align:center;
+    margin-top:50px;
+}
+h1{
+    text-align:center;
+    margin-top:13%;
+}
+#leftimg{
+    width:20%;
+    height:auto;
+    float:left;
+}
+#rightimg{
+    width:20%;
+    height:auto;
+    float:right;
 }
